@@ -1,0 +1,223 @@
+@media screen and (max-width: 1450px) {
+
+.menu-items {
+    display: inline-block;
+    list-style: none;
+    height: auto;
+    width: auto;
+    padding: 40px 4% 0 3%;
+    font-size: 2em;
+}
+
+nav ul li:nth-child(3) {
+    padding-left: 18%;
+}
+nav ul li:nth-child(2) {
+    padding-right: 28%;
+}
+nav ul li:nth-child(4) {
+    padding-left: -9%;
+}
+
+.logo {
+    left: 35%;
+}
+
+}
+
+
+@media screen and (max-width: 1025px) {
+    header {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        z-index: +3;
+        overflow: visible;
+    }
+    .logo img {
+        height: auto;
+        width: 70%;
+    }
+    .logo {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 13%;
+        z-index: +2;
+    }
+    nav {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 300px;
+        left: 0;
+        z-index: +6;
+    }
+    #menu {
+        width: 100%;
+        max-height: 0;
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: +6;
+        overflow: hidden;
+        -webkit-transition: max-height 1s;
+        transition: max-height 0.5s;
+    }
+    .menu-items {
+        width: 100%;
+        height: 75px;
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        z-index: +6;
+        background-color: #fff;
+        border: 1px solid rgba(227, 137, 23, 1);
+    }
+nav ul li:nth-child(3) {
+    padding-left: 0;
+}
+nav ul li:nth-child(2) {
+    padding-right: 0;
+}
+nav ul li:nth-child(4) {
+    padding-left: 0;
+}
+    .menu-items a {
+        position: relative;
+        top: 15px;
+        z-index: +6;
+    }
+    #menu.show-nav {
+        max-height: 300px;
+    }
+    .drop-button {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        bottom: -225px;
+        right: 20px;
+        background-color: rgba(227, 137, 23, 1);
+        font-size: 2em;
+        ] z-index: +4;
+    }
+    .drop-button i {
+        top: -4px;
+        position: relative;
+        z-index: +4;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        left: 0;
+    }
+
+    .item-display {
+        width: 80vw;
+        height: auto;
+        position: relative;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .item-picture {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+    .item-thumbs {
+        width: 28%;
+        margin: 0 2.6%;
+        max-height: auto;
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .item-thumbs.blow-up {
+        width: 28%;
+        margin: 0 2.6%;
+        max-height: auto;
+        display: block;
+        float: left;
+        position: relative;
+        transform: none;
+    }
+    .item-details {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        margin-top: 15px;
+        padding-top: 0;
+    }
+    .newest-flies {
+        width: 100%;
+        margin: 50px auto 50px;
+        height: auto;
+        border: none;
+    }
+    .new-fly-thumbs {
+        display: block;
+        width: 26%;
+        margin: 10px 2%;
+        float: left;
+    }
+    .content-container {
+        width: 100%;
+    }
+    .post-recent-post {
+        font-size: 2em;
+    }
+    .post-post-categories {
+        font-size: 2em;
+    }
+
+    #item-thumbnail {
+        position: relative;
+        width: 50%;
+        display: block;
+        float: left;
+        height: 370px;
+        margin: 15px auto;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #item-thumbnail {
+        position: relative;
+        width: 33%;
+        display: block;
+        float: left;
+        height: 400px;
+        margin: 15px auto;
+    }
+
+    .thumbnail-content-container {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .side-nav {
+        font-size: 9px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+
+    .side-nav li {
+        width: 33%;
+        height: 20px;
+        display: block;
+        float: left;
+        margin: 15px auto;
+    }
+}

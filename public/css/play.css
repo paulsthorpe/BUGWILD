@@ -1,0 +1,73 @@
+
+#item-thumbnail {
+    height: 400px;
+    width: 400px;
+    margin: 25px auto;
+    text-align: center;'
+    opacity: 0.9;
+    color: #ccc;
+    border: 0.2px solid rgba(0,0,0,0.1);
+    border-radius: 5%;
+    transition: color 0.2s, opacity 0.2s, border 0.2s, box-shadow: 0.2s; 
+}
+#item-thumbnail a {
+  color: rgba(0,0,0,0.7);
+}
+
+#item-thumbnail:hover{
+  opacity: 1;
+  color: #000;
+  border: 0.2px solid darkorange;
+  border-radius: 5%;
+  box-shadow: 5px 5px 0 #ccc;
+}
+
+
+.thumbnail-content-container {
+    margin: 0 auto 15px auto;
+}
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+/*    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(224, 221, 224, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(224, 221, 224, 1);
+    box-shadow: 10px 10px 5px 0px rgba(224, 221, 224, 1);*/
+    overflow: hidden;
+}
+
+.thumbnail-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+button {
+  width: 130px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 50px;
+  position: fixed;
+}
+
+@keyframes badassButton{
+   0% { width: 130px; height: 50px; }
+   10% { width: 155px; height: 50px; }
+   20% { width: 180px; }
+   30% { width: 205px; height: 45px; }
+   40% { width: 205px; height: 53px; }
+   50% { width: 205px; height: 57px; }
+   60% { width: 205px; height: 53px; }
+   70% { width: 180px; height: 50px; }
+   80% { width: 155px; }
+   90% { width: 130px; }
+   100% { width: 130px; }
+}
+
+button:hover{
+  animation: badassButton 0.5s;
+}
